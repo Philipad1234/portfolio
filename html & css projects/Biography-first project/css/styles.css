@@ -1,0 +1,36 @@
+/* styles applied to whole body */
+body{
+font-family: 'EB Garamond', serif;
+margin: 60px;
+
+}
+/* Styles applied to heading texts */
+h2{
+  text-align: center;
+}
+
+h5{
+  text-align: center;
+}
+/* styles applied to horizontal rule */
+hr{
+  width: 30%;
+margin: 0 auto 20px;
+}
+/* styles applied to image */
+img{
+width: 200px;
+float: left;
+}
+/* styles applied to paragraph */
+p{
+  margin: auto;
+}
+/* styles applied to sections */
+#main{
+  margin-top: 80px;
+}
+#footer{
+  margin: 100px 0;
+  text-align: center;
+}
