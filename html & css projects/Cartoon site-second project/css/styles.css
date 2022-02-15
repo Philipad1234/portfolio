@@ -1,0 +1,67 @@
+/* Styles for body */
+body{
+font-family: 'Poppins', sans-serif;
+  margin: 0;
+
+}
+/* Styles for Header */
+#Header{
+  text-align: center;
+  background-color: #F3C5C5;
+}
+/* Styles for Header image */
+img{
+  width: 20%;
+}
+/* Styles for text fonts */
+h1{
+  font-weight: bold;
+  font-size: 50px;
+}
+h2{
+  line-height: 50px;
+  justify-content: center;
+
+}
+/*Styles for Sections*/
+
+#main-body{
+  text-align: center;
+  margin-top: 50px;
+  color: #FE83C6;
+}
+#smile{
+  text-align: center;
+  background-color: #F3C5C5;
+}
+#contact{
+  text-align: center;
+  color: #FE83C6;
+}
+/* Styles for Divs*/
+.baby{
+  width: 15%;
+}
+.smiling-baby{
+  margin-top: 50px;
+  width: 15%;
+
+}
+.walk{
+  float: right;
+  margin-top: 30px;
+  margin-right: 150px;
+  width: 15%;
+}
+
+.socials{
+  text-align: center;
+  background-color: #F3C5C5;
+  padding-top: 30px;
+
+}
+.socials a{
+text-decoration: none;
+  color: #000000;
+padding-right: 50px;
+}
