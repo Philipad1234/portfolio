@@ -1,0 +1,129 @@
+/* styles for body */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Styles for Header */
+#Header {
+  background-color: #FFC0D3;
+}
+
+/* Styles for fonts */
+p{
+  text-align: center;
+  color: #524A4E;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 80px;
+  color: #524A4E;
+}
+
+h5 {
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.about h5 {
+  line-height: 50px;
+  color: #524A4E;
+  font-weight: bold;
+}
+.carousel-caption p{
+  color: #FA26A0;
+  font-size: 30px;
+font-weight: bold;
+}
+
+/* Styles for links */
+.nav-logo h1 a {
+  font-size: 60px;
+  color: #524A4E;
+  text-decoration: none;
+}
+.social-media-icons a{
+  margin: 40px;
+  color: #524A4E;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  color: #524A4E;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+/* Styles for unordered lists */
+.nav-items ul {
+  list-style-type: none;
+}
+
+.nav-items ul li {
+  display: inline-block;
+}
+
+/* Styles for hover links */
+.nav-items ul li a:hover {
+  color: white;
+}
+.col-3:hover {
+  transform: translateY(-5px);
+  transition: transform 0.5s;
+}
+.social-media-icons a:hover{
+  opacity: 0.7;
+}
+
+/* Styles for Carousel */
+.carousel .carousel-item {
+  height: 600px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+}
+
+/* Styles for Menu */
+.categories {
+  margin: 70px 0;
+}
+.col-3 img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* Styles for container class */
+.small-container {
+  max-width: 1300px;
+  margin: 200px auto auto auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Styles for about class */
+.about {
+  background-color: #FF5C8D;
+}
+
+/* Styles for Contact section */
+.social-media{
+  text-align: center;
+  padding-top: 100px;
+}
+.social-media-icons{
+  font-size: 40px;
+}
+
+/* Styles for Copyright class */
+.Copyright{
+  margin-top: 60px;
+  text-align: center;
+  background-color: #FFC0D3;
+  color: #524A4E;
+  font-weight: bold;
+}
