@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <!-- Css stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+
+<!-- Google icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="greeting">
+    <h1>Hi there!</h1>
+  </div>
+
+
+  <div class="image">
+    <img src="file:///C:/Users/Lenovo/Desktop/coding%20projects/html%20&%20css%20projects/portfolio/Javascript%20tutorials%202/slideUp-tutorial/images/IMG_7722-modified.png" alt="">
+
+  </div>
+
+  <div class="description">
+    <p id="intro-text">My name is Philip,
+      <br>A self-taught front end developer
+      <br>nice to meet you!
+    </p>
+  </div>
+
+  <div class="stacks">
+    <p>I am proficient in:</p>
+    <div class="row">
+      <div class="col-3">
+        <img src="file:///C:/Users/Lenovo/Desktop/coding%20projects/html%20&%20css%20projects/portfolio/Javascript%20tutorials%202/slideUp-tutorial/images/html5-logo-31813.png" alt="">
+        <img src="file:///C:/Users/Lenovo/Desktop/coding%20projects/html%20&%20css%20projects/portfolio/Javascript%20tutorials%202/slideUp-tutorial/images/html5-logo-31822.png" alt="">
+        <img src="file:///C:/Users/Lenovo/Desktop/coding%20projects/html%20&%20css%20projects/portfolio/Javascript%20tutorials%202/slideUp-tutorial/images/javascript-39394.png" alt="">
+      </div>
+    </div>
+
+    <div class="contact">
+      <p>Contact me:</p>
+      <ul>
+        <li><a href="mailto:philipad2097@gmail.com?subject=feedback">Email</a></li>
+        <li><a href="#">Phone</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      Copyright &copy 2022 Javascript tutorials
+    </div>
+
+<!-- Javascript scripts -->
+    <script>
+      window.onscroll = function() {
+        myFunction()
+      };
+
+      function myFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          document.getElementById("intro-text").className = "slideUp";
+        }
+      }
+    </script>
+
+</body>
+
+</html>

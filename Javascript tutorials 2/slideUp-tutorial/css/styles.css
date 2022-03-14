@@ -1,0 +1,105 @@
+/* Styles for body */
+body {
+  font-family: 'Sansita Swashed', cursive;
+  text-align: center;
+  background-color: #E3B7A0;
+}
+
+/* Styles for google icons */
+.material-icons {
+  width: 80px;
+}
+
+/* Styles for texts */
+h1 {
+  font-size: 100px;
+}
+
+p {
+  line-height: 50px;
+  font-weight: bold;
+}
+
+/* Styles for images */
+img {
+  width: 200px;
+}
+
+.image {
+  padding-top: 80px;
+}
+
+.stacks {
+  padding-top: 80px;
+}
+
+/* Styles for divs */
+.greeting {
+  padding-top: 100px;
+}
+
+.description {
+  padding-top: 100px;
+}
+
+.col-3 {
+  padding: auto;
+}
+
+.contact {
+  padding-top: 80px;
+}
+
+/* Styles for list items */
+.contact ul {
+  list-style-type: none;
+}
+
+.contact ul li {
+  display: inline-block;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact ul li a:hover {
+  opacity: 0.7;
+}
+
+/* Styles for slideUp */
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  visibility: visible;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
