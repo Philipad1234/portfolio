@@ -1,0 +1,33 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+form {
+  text-align: center;
+  margin: auto;
+  padding-top: 200px;
+  ;
+}
+
+input {
+  border-radius: 5px;
+}
+
+img {
+  width: 100px;
+}
+
+div {
+  padding-top: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 150px;
+}
+
+.top {
+  background-color: #2FA4FF;
+  color: #000;
+  text-align: center;
+}
