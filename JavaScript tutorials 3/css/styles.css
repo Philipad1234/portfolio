@@ -1,0 +1,22 @@
+/* Styles for body */
+body{
+background-color: #1A1A40;
+}
+
+/* Styles for text */
+h1 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 200px;
+  font-family: 'Source Serif Pro', serif;
+  color: #fff;
+}
+
+/* Styles for button */
+.click-button {
+  text-align: center;
+  padding-top: 60px;
+}
+.btn {
+  width: 150px;
+}
