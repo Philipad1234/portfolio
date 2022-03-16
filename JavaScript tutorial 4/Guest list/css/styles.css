@@ -1,0 +1,32 @@
+/* Styles for body */
+body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom right, #C1A3A3 50%, #F3C5C5 50%);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Styles for button */
+button{
+  margin-top: 20px;
+}
+
+/* Styles for input */
+input{
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Styles for Div */
+.guessList{
+  position: relative;
+top: 40%;
+}
+
+/* Styles for footer */
+.Copyright{
+  position: relative;
+  top: 70%;
+}
