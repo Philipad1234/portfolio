@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Set Interval and arrays</title>
+
+<!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+
+<!-- Css Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <h1 id="heading"></h1>
+
+
+  <script type="text/javascript">
+
+
+    const welcome = ["Hello", "My", "Name", "Is", "Philip", "Nice", "To", "Meet", "You!"];
+    let i = 0;
+    const myInterval = setInterval(myTimer, 1000);
+    function myTimer() {
+      document.getElementById("heading").innerHTML = welcome[i];
+      i++;
+      if(i > welcome.length - 1) {
+        clearInterval(myInterval);
+      }
+    }
+
+  </script>
+
+
+
+</body>
+
+</html>
