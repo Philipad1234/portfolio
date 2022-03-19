@@ -1,0 +1,13 @@
+/* Styles for body */
+body{
+  background-color: #000;
+}
+/* Styles for text */
+  h1{
+  font-family: 'Smooch Sans', sans-serif;
+  text-align: center;
+  margin-top: 20%;
+  color: #fff;
+  font-size: 150px;
+  font-weight: bold;
+}

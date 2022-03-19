@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Typing</title>
+
+<!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap" rel="stylesheet">
+
+<!-- Css Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    
+<h1 id="heading"></h1>
+
+<script type="text/javascript">
+let i = 0, heading;
+heading = "Hello World!";
+
+
+ function myFunction(){
+   if(i < heading.length){
+     document.getElementById("heading").innerHTML += heading.charAt(i);
+     i++;
+     setTimeout(myFunction, 100);
+   }
+ }
+myFunction();
+
+</script>
+
+  </body>
+</html>
