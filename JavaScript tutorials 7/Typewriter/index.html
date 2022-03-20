@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>typewriter</title>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Css stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <div class="">
+    <textarea name="name" rows="20" cols="180" style="font-size:15px; font-weight:bold;" id="text"></textarea>
+  </div>
+  <br>
+  <div class="type-input">
+    <input id="write" type="text" name="" value="" oninput="myFunction()" placeholder="Input text here">
+  </div>
+
+
+  <script type="text/javascript">
+    let header = document.getElementById("text");
+    let val = document.getElementById("write");
+
+    function myFunction() {
+      header.innerHTML = val.value;
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+/* Styles for body */
+body{
+  background-color: #FFFDDE;
+}
+
+/* Styles for text */
+h1{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Styles for div */
+div{
+  text-align: center;
+}
+
+/* Styles for input field */
+input{
+  width: 200px;
+  border-radius: 15px;
+  height: 25px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Styles for textarea */
+textarea{
+  margin-top: 100px;
+}
