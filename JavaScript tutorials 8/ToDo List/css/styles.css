@@ -1,0 +1,47 @@
+/* Styles for body */
+body{
+  background-color: #AD8B73;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Styles for text */
+h1{
+
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Styles for input */
+input{
+  height: 42px;
+  width: 250px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Styles for class btn */
+.btn{
+  background-color: #000;
+}
+
+/* Styles for class container */
+.container{
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* Styles applied to new paragraphs created */
+.paragraph-styles{
+  padding-top: 20px;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+/* Styles for copyright statement */
+.Copyright{
+  text-align: center;
+  padding-top: 30%;
+  font-weight: bold;
+
+}
