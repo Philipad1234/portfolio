@@ -1,6 +1,6 @@
 # portfolio
 My name is Philip Adams.
-A self-taught programmer
-This is my portfolio detailing my growth as a web developer
-This includes projects from basic HTML, CSS and JavaScript coded websites. 
-Looking forward to growing and connecting with people who can help me on this journey
+A self-taught web developer.
+This is my portfolio detailing my growth as a web developer.
+This includes HTML, CSS and JavaScript projects. 
+Looking forward to growing and connecting with people who can help me on this journey!
