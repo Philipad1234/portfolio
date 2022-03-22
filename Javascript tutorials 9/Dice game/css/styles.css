@@ -1,0 +1,40 @@
+/* Styles for body */
+body{
+font-family: 'Ramaraja', serif;
+background-color: #00B4D8;
+}
+
+/* Styles for text */
+h1{
+padding-top: 60px;
+font-size: 70px;
+font-weight: bold;
+text-align: center;
+}
+.p1{
+margin-left: 320px;
+}
+.p2{
+  position: relative;
+margin-left: 65rem;
+bottom: 450px;
+}
+
+/* Styles for images */
+img{
+  width: 25%;
+}
+.img1{
+  margin-left: 200px;
+}
+.img2{
+  margin-left: 50%;
+  position: relative;
+  bottom: 450px;
+  left: 7.5rem;
+}
+
+/* Styles for copyright */
+.Copyright{
+  text-align: center;
+}

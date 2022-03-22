@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dice game</title>
+
+<!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
+
+<!-- Css stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <h1 id="heading">Dice Game</h1>
+
+  <h2 class="p1">Player 1</h2>
+  <img class="img1" src="images/dice1.png" alt="">
+
+
+  <h2 class="p2">Player 2</h2>
+  <img class="img2" src="images/dice1.png" alt="">
+
+
+  <script type="text/javascript">
+    
+    // For Dice 1
+    let randomDiceNumber1 = Math.floor((Math.random() * 6) + 1); //Random numbers from 1 to 6
+    let randomDiceImage1 = "dice" + randomDiceNumber1 + ".png"; //Random number.png
+    let randomImageSource1 = "images/" + randomDiceImage1; // images/Random number.png
+
+    let firstImage = document.querySelectorAll("img")[0]; //links random number to first img element
+
+    firstImage.setAttribute("src", randomImageSource1); //changes the source to match current random number
+
+
+    // For Dice 2
+    let randomDiceNumber2 = Math.floor((Math.random() * 6) + 1) //Random numbers from 1 to 6
+    let randomDiceImage2 = "dice" + randomDiceNumber2 + ".png"; //Random number.png
+    let randomImageSource2 = "images/" + randomDiceImage2; // images/Random number.png
+
+    let secondImage = document.querySelectorAll("img")[1]; //links random number to second img element
+
+    secondImage.setAttribute("src", randomImageSource2); //changes the source to match current random number
+
+
+    if (randomDiceNumber1 > randomDiceNumber2) {
+      document.getElementById("heading").innerHTML = "Player 1 wins!" //Taps into the heading element and  manipulates it to match the string "Player 1 wins" based on the if condition
+    } else if (randomDiceNumber1 < randomDiceNumber2) {
+      document.getElementById("heading").innerHTML = "Player 2 wins!" //Taps into the heading element and  manipulates it to match the string "Player 2 wins" based on the else if condition
+    } else {
+      document.getElementById("heading").innerHTML = "Draw!" //Taps into the heading element and  manipulates it to match the string "draw"
+    }
+  </script>
+
+
+
+
+
+<div class="Copyright">
+  2022 &copy Javascript Tutorials
+  <p>All Rights Reserved</p>
+</div>
+</body>
+
+</html>
