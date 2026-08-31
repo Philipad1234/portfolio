@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Adams · Software Developer & Automation Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo-mark">
+            <div class="logo-ring"><span>PA</span></div>
+            <span class="logo-name">PHILIP ADAMS</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li class="nav-cta-mobile"><a href="#contact">Work with me</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta nav-cta-desktop">Work with me</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero">
+
+        <div class="depth-field">
+            <svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <pattern id="blueprintGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+                        <path d="M60,0 L0,0 L0,60" fill="none" stroke="#C9A667" stroke-opacity="0.09"
+                            stroke-width="1" />
+                    </pattern>
+                    <pattern id="blueprintGridMajor" width="240" height="240" patternUnits="userSpaceOnUse">
+                        <path d="M240,0 L0,0 L0,240" fill="none" stroke="#C9A667" stroke-opacity="0.16"
+                            stroke-width="1" />
+                    </pattern>
+                    <radialGradient id="vignette" cx="50%" cy="42%" r="65%">
+                        <stop offset="0%" stop-color="#0B0D10" stop-opacity="0" />
+                        <stop offset="100%" stop-color="#0B0D10" stop-opacity="0.9" />
+                    </radialGradient>
+                </defs>
+
+                <rect width="1400" height="900" fill="url(#blueprintGrid)" />
+                <rect width="1400" height="900" fill="url(#blueprintGridMajor)" />
+
+                <g stroke="#C9A667" stroke-opacity="0.35" fill="none" stroke-width="1">
+                    <path d="M60,60 h18 M60,60 v18" />
+                    <path d="M1340,60 h-18 M1340,60 v18" />
+                    <path d="M60,840 h18 M60,840 v-18" />
+                    <path d="M1340,840 h-18 M1340,840 v-18" />
+                </g>
+
+                <g fill="#C9A667" fill-opacity="0.55">
+                    <circle cx="240" cy="180" r="2.5" />
+                    <circle cx="1120" cy="660" r="2.5" />
+                    <circle cx="960" cy="240" r="2.5" />
+                    <circle cx="360" cy="700" r="2.5" />
+                </g>
+
+                <rect width="1400" height="900" fill="url(#vignette)" />
+            </svg>
+        </div>
+
+        <div class="hero-body">
+            <div class="eyebrow">Portfolio · 2026</div>
+            <h1>Philip Adams<br><span class="line2">builds what runs.</span></h1>
+            <p class="tagline">Marine engineer turned software engineer. I spent years keeping engines running at sea.
+                Now I build the systems, automations, and platforms that keep businesses running on land.</p>
+            <div class="cta-row">
+                <a href="#" class="btn btn-filled">View my work</a>
+                <a href="#" class="btn btn-outline">Get in touch</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+
+    </div>
+
+    <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
