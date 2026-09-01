@@ -14,3 +14,11 @@
                 navToggle.setAttribute('aria-expanded', 'false');
             });
         });
+
+
+const spotlight = document.getElementById('spotlight');
+
+window.addEventListener('mousemove', (e) => {
+  spotlight.style.setProperty('--spot-x', e.clientX + 'px');
+  spotlight.style.setProperty('--spot-y', e.clientY + 'px');
+});

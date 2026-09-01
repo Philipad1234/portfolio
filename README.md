@@ -23,7 +23,7 @@ This site showcases my background and the platforms I've built and worked on, in
 
 ## Status
 
-Actively in progress. Currently built: navigation and hero section, about section. Remaining sections (Journey, Work, Expertise, Contact) and the backend are being added incrementally.
+Actively in progress. Currently built: navigation and hero section, about section, work section. Remaining sections (Journey, Expertise, Contact) and the backend are being added incrementally.
 
 ## Running Locally
 
