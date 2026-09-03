@@ -2,7 +2,7 @@
 
 Personal portfolio site for Philip Adams, a software developer specializing in full-stack web development, automation, and AI-integrated workflows.
 
-**Live site:** [website link goes here later]
+**Live site:** [https://portfolio-silk-one-sc643kgo7i.vercel.app/]
 
 ## About
 
@@ -23,15 +23,7 @@ This site showcases my background and the platforms I've built and worked on, in
 
 ## Status
 
-Actively in progress. Currently built: navigation and hero section, about section, work section, journey section. Remaining sections (Expertise, Contact) and the backend are being added incrementally.
-
-## Running Locally
-
-This is currently a static site with no build step. Clone the repo and open `index.html` in a browser, or serve it with any static file server:
-
-```bash
-npx serve .
-```
+Actively in progress. Currently built: navigation and hero section, about section, work section, journey section, expertise section. Remaining sections (Contact) and the backend are being added incrementally.
 
 ## Structure
 
