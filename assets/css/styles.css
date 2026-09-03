@@ -789,7 +789,7 @@ h1 .line2 {
 
 @media (max-width:600px) {
     .timeline-item {
-        grid-template-columns: 85px 1fr;
-        gap: 24px;
+        grid-template-columns: 108px 1fr;
+        gap: 22px;
     }
 }
