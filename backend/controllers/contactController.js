@@ -1,19 +1,46 @@
 import Submission from "../models/Submission.js";
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const submissionPost = async (req, res) => {
     try {
         const { name, email, reason, message } = req.body;
+
+        // Validation
         if (!name || !email || !message) {
             return res.status(400).json({ error: "Name, email, and message are required" });
         }
+
+        // Save to database
         const newSubmission = new Submission({
             name,
             email,
             reason,
             message
-        })
-        await newSubmission.save()
-        return res.status(201).json({ message: "New submission saved" })
+        });
+
+        await newSubmission.save();
+
+        // Send email notification
+        try {
+            const { data, error } = await resend.emails.send({
+                from: `Portfolio Contact <onboarding@resend.dev>`,
+                replyTo: email,
+                to: [process.env.MY_EMAIL],
+                subject: `Contact Form Enquiries: ${reason || 'General'}`,
+                text: `Name: ${name}\nEmail: ${email}\nReason: ${reason || 'Not specified'}\n\nMessage:\n${message}`
+            });
+
+            if (error) {
+                console.log('Error sending email:', error);
+            } else {
+                console.log('Email sent successfully!', data);
+            }
+        } catch (error) {
+            console.error('An unexpected error occurred:', error);
+        }
+        return res.status(201).json({ message: "New submission saved" });
     } catch (error) {
         console.error("Error saving data:", error);
         return res.status(500).json({ error: "Something went wrong saving your message" });

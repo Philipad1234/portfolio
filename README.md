@@ -2,7 +2,7 @@
 
 Personal portfolio site for Philip Adams, a software developer specializing in full-stack web development, automation, and AI-integrated workflows.
 
-**Live site:** https://philip-adams-portfolio.vercel.app/
+**Live site:** [https://philip-adams-portfolio.vercel.app/]
 
 ## About
 
@@ -11,7 +11,7 @@ This site showcases my background and the platforms I've built and worked on, in
 ## Tech Stack
 
 **Frontend**
-- HTML5, CSS3, vanilla JavaScript
+- HTML5, CSS3, vanilla JavaScript, hand-coded, no template or page builder
 - Google Fonts: Fraunces (display), IBM Plex Mono (labels), Inter (body)
 - Hosted on Vercel
 
@@ -25,6 +25,7 @@ This site showcases my background and the platforms I've built and worked on, in
 
 - Sticky, responsive navigation with a mobile hamburger menu
 - Scroll-anchored sections: About, Journey, Work, Expertise, Contact
+- Custom SVG background motif (blueprint/drafting grid)
 - Working contact form: submissions are validated, saved to MongoDB, and emailed
 - Fully responsive layout, cursor-following spotlight effect on desktop
 
@@ -32,16 +33,16 @@ This site showcases my background and the platforms I've built and worked on, in
 
 Frontend structure is complete: Hero, About, Journey, Work, Expertise, Status, and Contact are all built and styled.
 
-Backend is in progress. Currently working:
+Backend contact form is feature-complete locally:
 - Express server with MongoDB Atlas connection
 - POST /api/contact route: validates input, saves submissions to the database
-- Tested locally via Postman, confirmed writes to MongoDB Atlas
+- Email notifications on new submissions via Resend, with reply-to set to the submitter
+- Tested end to end locally: confirmed writes to MongoDB Atlas and email delivery
 
-Remaining backend work:
-- Email notifications on new submissions (Resend)
+Remaining work:
 - Deploy backend to Render
 - Connect the live frontend form to the deployed backend
-- Rate limiting on public endpoints.
+- Rate limiting on public endpoints
 
 ## Running Locally
 
@@ -64,6 +65,8 @@ Create a `.env` file in `backend/` with:
 
 ```
 MONGODB_URI=your_mongodb_atlas_connection_string
+RESEND_API_KEY=your_resend_api_key
+MY_EMAIL=your_inbox_email_address
 PORT=3000
 ```
 
