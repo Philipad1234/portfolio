@@ -39,10 +39,6 @@ Backend contact form is feature-complete locally:
 - Email notifications on new submissions via Resend, with reply-to set to the submitter
 - Tested end to end locally: confirmed writes to MongoDB Atlas and email delivery
 
-Remaining work:
-- Deploy backend to Render
-- Connect the live frontend form to the deployed backend
-- Rate limiting on public endpoints
 
 ## Running Locally
 
