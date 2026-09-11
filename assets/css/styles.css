@@ -388,11 +388,7 @@ h1 .line2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    image-rendering: smooth;
-    filter: blur(0.4px);
-    transform: translateZ(0);
-    scale: 1.02;
-
+    display: block;
 }
 
 .portrait-caption {
@@ -491,14 +487,6 @@ h1 .line2 {
     }
 }
 
-@media (-webkit-max-device-pixel-ratio: 1.5),
-(max-resolution: 144dpi) {
-    .portrait-frame img {
-        filter: blur(0.4px);
-        transform: translateZ(0);
-        scale: 1.02;
-    }
-}
 
 /*Work section*/
 .work {
