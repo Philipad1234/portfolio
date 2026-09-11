@@ -19,26 +19,27 @@ This site showcases my background and the platforms I've built and worked on, in
 - Node.js, Express
 - MongoDB Atlas via Mongoose
 - Resend, for contact form email notifications
+- express-rate-limit, to protect the contact endpoint from abuse
 - Hosted on Render
 
 ## Features
 
 - Sticky, responsive navigation with a mobile hamburger menu
 - Scroll-anchored sections: About, Journey, Work, Expertise, Contact
-- Custom SVG background motif (blueprint/drafting grid)
-- Working contact form: submissions are validated, saved to MongoDB, and emailed
+- Custom SVG background motif (blueprint/drafting grid) rather than a stock template look
+- Working contact form: submissions are validated, saved to MongoDB, emailed via Resend, and rate-limited against spam
 - Fully responsive layout, cursor-following spotlight effect on desktop
 
 ## Status
 
 Frontend structure is complete: Hero, About, Journey, Work, Expertise, Status, and Contact are all built and styled.
 
-Backend contact form is feature-complete locally:
-- Express server with MongoDB Atlas connection
+Backend is deployed and fully working end to end:
+- Express server with MongoDB Atlas connection, deployed on Render
 - POST /api/contact route: validates input, saves submissions to the database
 - Email notifications on new submissions via Resend, with reply-to set to the submitter
-- Tested end to end locally: confirmed writes to MongoDB Atlas and email delivery
-
+- Rate limiting on the contact endpoint (5 requests per 15 minutes per IP)
+- Confirmed working live: frontend to backend to database to inbox, tested end to end in production
 
 ## Running Locally
 
@@ -91,11 +92,14 @@ This starts the Express server with nodemon at `http://localhost:3000`.
 │       ├── apple-touch-icon.png
 │       ├── android-chrome-192x192.png
 │       ├── android-chrome-512x512.png
-│       └── logo-avatar.jpg
+│       ├── logo-avatar.jpg
+│       └── my_picture.jpg
 ├── backend/
 │   ├── server.js
 │   ├── controllers/
 │   │   └── contactController.js
+│   ├── middlewares/
+│   │   └── rateLimiter.js
 │   ├── models/
 │   │   └── Submission.js
 │   ├── routes/
