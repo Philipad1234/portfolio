@@ -62,3 +62,37 @@ form.addEventListener('submit', async (e) => {
         submitBtn.textContent = 'Send message';
     }
 })
+
+// Animations
+const revealEls = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('is-visible'), i * 80);
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.2 });
+revealEls.forEach(el => revealObserver.observe(el));
+
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+if (timelineItems.length) {
+    const itemsArray = Array.from(timelineItems);
+
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-active');
+
+                const index = itemsArray.indexOf(entry.target);
+                const previousItem = itemsArray[index - 1];
+                if (previousItem) {
+                    previousItem.classList.add('is-drawn');
+                }
+            }
+        });
+    }, { threshold: 0.5 });
+
+    itemsArray.forEach(item => timelineObserver.observe(item));
+}
