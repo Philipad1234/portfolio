@@ -24,13 +24,36 @@ window.addEventListener('mousemove', (e) => {
     spotlight.style.setProperty('--spot-y', e.clientY + 'px');
 });
 
-// Form submissions
+// Contact form: validation, animations, and real submission (single handler)
 const form = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
+const btn = document.getElementById('submitBtn');
+
+const fields = [
+    { el: document.getElementById('fieldName'), input: document.getElementById('cf-name') },
+    { el: document.getElementById('fieldEmail'), input: document.getElementById('cf-email') },
+    { el: document.getElementById('fieldMessage'), input: document.getElementById('cf-message') },
+];
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const submitBtn = form.querySelector('.form-submit');
+
+    let hasError = false;
+    fields.forEach(f => {
+        f.el.classList.remove('has-error');
+        void f.el.offsetWidth;
+        if (!f.input.value.trim()) {
+            f.el.classList.add('has-error');
+            hasError = true;
+        }
+    });
+
+    if (hasError) {
+        formStatus.textContent = 'Please fill in all fields.';
+        formStatus.className = 'form-status is-visible';
+        return;
+    }
+
     const payload = {
         name: document.getElementById('cf-name').value,
         email: document.getElementById('cf-email').value,
@@ -38,9 +61,7 @@ form.addEventListener('submit', async (e) => {
         message: document.getElementById('cf-message').value,
     };
 
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending...';
-    formStatus.textContent = '';
+    btn.classList.add('is-loading');
     formStatus.className = 'form-status';
 
     try {
@@ -51,19 +72,30 @@ form.addEventListener('submit', async (e) => {
         });
         if (!res.ok) throw new Error('Request failed');
 
-        formStatus.textContent = "Message sent. I'll get back to you soon.";
-        formStatus.className = 'form-status is-success';
-        form.reset();
-    } catch (error) {
-        formStatus.textContent = 'Something went wrong. Try again, or email me directly.';
-        formStatus.className = 'form-status is-error';
-    } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send message';
-    }
-})
+        btn.classList.remove('is-loading');
+        btn.classList.add('is-success');
 
-// Animations
+        setTimeout(() => {
+            formStatus.textContent = "Message sent. I'll get back to you soon.";
+            formStatus.className = 'form-status is-visible is-success';
+        }, 200);
+
+        setTimeout(() => {
+            btn.classList.remove('is-success');
+            form.reset();
+        }, 2200);
+    } catch (error) {
+        btn.classList.remove('is-loading');
+        formStatus.textContent = 'Something went wrong. Try again, or email me directly.';
+        formStatus.className = 'form-status is-visible is-error';
+    }
+});
+
+fields.forEach(f => {
+    f.input.addEventListener('input', () => f.el.classList.remove('has-error'));
+});
+
+// Scroll-reveal animation
 const revealEls = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -75,6 +107,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 revealEls.forEach(el => revealObserver.observe(el));
 
+// Timeline draw-in animation
 const timelineItems = document.querySelectorAll('.timeline-item');
 
 if (timelineItems.length) {
