@@ -76,7 +76,7 @@ form.addEventListener('submit', async (e) => {
         btn.classList.add('is-success');
 
         setTimeout(() => {
-            formStatus.textContent = "Message sent. I'll get back to you soon.";
+            formStatus.textContent = "Message received. I'll get back to you soon.";
             formStatus.className = 'form-status is-visible is-success';
         }, 200);
 
