@@ -39,6 +39,7 @@ Backend is deployed and fully working end to end:
 - POST /api/contact route: validates input, saves submissions to the database
 - Email notifications on new submissions via Resend, with reply-to set to the submitter
 - Rate limiting on the contact endpoint (5 requests per 15 minutes per IP)
+- HubSpot CRM API, for syncing contact form submissions to a CRM automatically
 - Confirmed working live: frontend to backend to database to inbox, tested end to end in production
 
 ## Running Locally

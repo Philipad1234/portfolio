@@ -1,7 +1,9 @@
 import Submission from "../models/Submission.js";
 import { Resend } from 'resend';
+import { Client } from '@hubspot/api-client';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const hubspotClient = new Client({ accessToken: process.env.HUBSPOT_ACCESS_TOKEN })
 
 const submissionPost = async (req, res) => {
     try {
@@ -22,7 +24,7 @@ const submissionPost = async (req, res) => {
 
         await newSubmission.save();
 
-        // Send email notification
+        // Send email notification with resend
         try {
             const { data, error } = await resend.emails.send({
                 from: `Portfolio Contact <onboarding@resend.dev>`,
@@ -40,6 +42,23 @@ const submissionPost = async (req, res) => {
         } catch (error) {
             console.error('An unexpected error occurred:', error);
         }
+
+        // Sync submissions to Hubspot
+        try {
+            const contactObj = {
+                properties: {
+                    firstname: name,
+                    email: email,
+                    reason_for_reaching_out: reason,
+                    contact_message: message,
+                },
+            };
+            const syncedContact = await hubspotClient.crm.contacts.basicApi.create(contactObj);
+            console.log('HubSpot contact created:', syncedContact.id);
+        } catch (error) {
+            console.error('HubSpot Sync Error:', error.response?.body || error.message);
+        }
+
         return res.status(201).json({ message: "New submission saved" });
     } catch (error) {
         console.error("Error saving data:", error);
