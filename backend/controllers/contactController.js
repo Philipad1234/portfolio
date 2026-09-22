@@ -53,8 +53,31 @@ const submissionPost = async (req, res) => {
                     contact_message: message,
                 },
             };
-            const syncedContact = await hubspotClient.crm.contacts.basicApi.create(contactObj);
-            console.log('HubSpot contact created:', syncedContact.id);
+
+            const publicObjectSearchRequest = {
+                filterGroups: [
+                    {
+                        filters: [
+                            {
+                                propertyName: 'email',
+                                operator: 'EQ',
+                                value: email
+                            }
+                        ]
+                    }
+                ]
+            }
+            const response = await hubspotClient.crm.contacts.searchApi.doSearch(publicObjectSearchRequest)
+
+            if (response.results.length > 0) {
+                const contactId = response.results[0].id;
+                const updatedContact = await hubspotClient.crm.contacts.basicApi.update(contactId, contactObj)
+                console.log('HubSpot contact updated:', updatedContact.id);
+            }
+            else {
+                const syncedContact = await hubspotClient.crm.contacts.basicApi.create(contactObj);
+                console.log('HubSpot contact created:', syncedContact.id);
+            }
         } catch (error) {
             console.error('HubSpot Sync Error:', error.response?.body || error.message);
         }
