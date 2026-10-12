@@ -648,6 +648,52 @@ h1 .line2 {
     background: rgba(201, 166, 103, 0.08);
 }
 
+.work-card-wide {
+    grid-column: 1 / -1;
+}
+
+.work-card-wide p {
+    max-width: 640px;
+}
+
+.work-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 18px;
+}
+
+.work-links .work-link {
+    margin-top: 0;
+}
+
+.work-shot {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid var(--line-strong);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.work-shot img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.4s ease;
+}
+
+.work-shot:hover img {
+    transform: scale(1.02);
+}
+
+@media (max-width:640px) {
+    .work-shot img {
+        aspect-ratio: 4/3;
+    }
+}
+
 @media (max-width:760px) {
     .work-secondary {
         grid-template-columns: 1fr;

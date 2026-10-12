@@ -1,4 +1,4 @@
-# Philip Adams — Portfolio
+# Philip Adams | Portfolio
 
 Personal portfolio site for Philip Adams, a software developer specializing in full-stack web development, automation, and AI-integrated workflows.
 
@@ -6,7 +6,7 @@ Personal portfolio site for Philip Adams, a software developer specializing in f
 
 ## About
 
-This site showcases my background and the platforms I've built and worked on, including a two-sided job board built end to end as sole engineer, a membership platform serving 400+ users, and several client and freelance projects. It also documents my transition from marine engineering into software.
+This site showcases my background and the platforms I've built and worked on, including a two-sided job board built end to end as sole engineer, a membership platform serving 400+ users, several client and freelance projects, and TrailGear Toolkit, a personal WooCommerce build with a custom PHP plugin. It also documents my transition from marine engineering into software.
 
 ## Tech Stack
 
@@ -29,6 +29,7 @@ This site showcases my background and the platforms I've built and worked on, in
 - Scroll-anchored sections: About, Journey, Work, Expertise, Contact
 - Custom SVG background motif (blueprint/drafting grid) rather than a stock template look
 - Working contact form: submissions are validated, saved to MongoDB, emailed via Resend, synced to HubSpot CRM, and rate-limited against spam
+- Scroll-reveal animations, a drawing Journey timeline, and animated contact form states
 - Fully responsive layout, cursor-following spotlight effect on desktop
 
 ## Status
