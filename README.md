@@ -6,7 +6,7 @@ Personal portfolio site for Philip Adams, a software developer specializing in f
 
 ## About
 
-This site showcases my background and the platforms I've built and worked on, including a two-sided job board built end to end as sole engineer, a membership platform serving 400+ users, several client and freelance projects, and TrailGear Toolkit, a personal WooCommerce build with a custom PHP plugin. It also documents my transition from marine engineering into software.
+This site showcases my background and the platforms I've built and worked on, including a two-sided job board built end to end as sole engineer, a membership platform serving 400+ users, several client and freelance projects, and personal builds: TrailGear Toolkit, a custom WooCommerce plugin in PHP, and a set of n8n AI agents including a RAG document Q&A agent. It also documents my transition from marine engineering into software.
 
 ## Tech Stack
 
