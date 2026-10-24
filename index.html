@@ -1,584 +1,890 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Philip Adams is a software developer and automation engineer who builds platforms, integrations, and AI workflows. Portfolio of web, WooCommerce, and n8n projects.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Philip Adams is a software developer and automation engineer who builds platforms, integrations, and AI workflows. Portfolio of web, WooCommerce, and n8n projects."
+    />
     <title>Philip Adams · Software Developer & Automation Engineer</title>
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/android-chrome-512x512.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/images/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/assets/images/android-chrome-512x512.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="spotlight" id="spotlight"></div>
     <!-- Navbar -->
     <nav>
-        <div class="logo-mark">
-            <div class="logo-ring"><span>PA</span></div>
-            <span class="logo-name">PHILIP ADAMS</span>
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#journey">Journey</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li class="nav-cta-mobile"><a href="#contact">Work with me</a></li>
-        </ul>
-        <a href="#contact" class="nav-cta nav-cta-desktop">Work with me</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
+      <div class="logo-mark">
+        <div class="logo-ring"><span>PA</span></div>
+        <span class="logo-name">PHILIP ADAMS</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li class="nav-cta-mobile"><a href="#contact">Work with me</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta nav-cta-desktop">Work with me</a>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
     </nav>
 
     <!-- Hero section -->
     <div class="hero">
+      <div class="depth-field">
+        <svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern
+              id="blueprintGrid"
+              width="60"
+              height="60"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M60,0 L0,0 L0,60"
+                fill="none"
+                stroke="#C9A667"
+                stroke-opacity="0.09"
+                stroke-width="1"
+              />
+            </pattern>
+            <pattern
+              id="blueprintGridMajor"
+              width="240"
+              height="240"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M240,0 L0,0 L0,240"
+                fill="none"
+                stroke="#C9A667"
+                stroke-opacity="0.16"
+                stroke-width="1"
+              />
+            </pattern>
+            <radialGradient id="vignette" cx="50%" cy="42%" r="65%">
+              <stop offset="0%" stop-color="#0B0D10" stop-opacity="0" />
+              <stop offset="100%" stop-color="#0B0D10" stop-opacity="0.9" />
+            </radialGradient>
+          </defs>
 
-        <div class="depth-field">
-            <svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice">
-                <defs>
-                    <pattern id="blueprintGrid" width="60" height="60" patternUnits="userSpaceOnUse">
-                        <path d="M60,0 L0,0 L0,60" fill="none" stroke="#C9A667" stroke-opacity="0.09"
-                            stroke-width="1" />
-                    </pattern>
-                    <pattern id="blueprintGridMajor" width="240" height="240" patternUnits="userSpaceOnUse">
-                        <path d="M240,0 L0,0 L0,240" fill="none" stroke="#C9A667" stroke-opacity="0.16"
-                            stroke-width="1" />
-                    </pattern>
-                    <radialGradient id="vignette" cx="50%" cy="42%" r="65%">
-                        <stop offset="0%" stop-color="#0B0D10" stop-opacity="0" />
-                        <stop offset="100%" stop-color="#0B0D10" stop-opacity="0.9" />
-                    </radialGradient>
-                </defs>
+          <rect width="1400" height="900" fill="url(#blueprintGrid)" />
+          <rect width="1400" height="900" fill="url(#blueprintGridMajor)" />
 
-                <rect width="1400" height="900" fill="url(#blueprintGrid)" />
-                <rect width="1400" height="900" fill="url(#blueprintGridMajor)" />
+          <g
+            stroke="#C9A667"
+            stroke-opacity="0.35"
+            fill="none"
+            stroke-width="1"
+          >
+            <path d="M60,60 h18 M60,60 v18" />
+            <path d="M1340,60 h-18 M1340,60 v18" />
+            <path d="M60,840 h18 M60,840 v-18" />
+            <path d="M1340,840 h-18 M1340,840 v-18" />
+          </g>
 
-                <g stroke="#C9A667" stroke-opacity="0.35" fill="none" stroke-width="1">
-                    <path d="M60,60 h18 M60,60 v18" />
-                    <path d="M1340,60 h-18 M1340,60 v18" />
-                    <path d="M60,840 h18 M60,840 v-18" />
-                    <path d="M1340,840 h-18 M1340,840 v-18" />
-                </g>
+          <g fill="#C9A667" fill-opacity="0.55">
+            <circle cx="240" cy="180" r="2.5" />
+            <circle cx="1120" cy="660" r="2.5" />
+            <circle cx="960" cy="240" r="2.5" />
+            <circle cx="360" cy="700" r="2.5" />
+          </g>
 
-                <g fill="#C9A667" fill-opacity="0.55">
-                    <circle cx="240" cy="180" r="2.5" />
-                    <circle cx="1120" cy="660" r="2.5" />
-                    <circle cx="960" cy="240" r="2.5" />
-                    <circle cx="360" cy="700" r="2.5" />
-                </g>
+          <rect width="1400" height="900" fill="url(#vignette)" />
+        </svg>
+      </div>
 
-                <rect width="1400" height="900" fill="url(#vignette)" />
-            </svg>
+      <div class="hero-body">
+        <div class="eyebrow">Portfolio · 2026</div>
+        <h1>Philip Adams<br /><span class="line2">builds what runs.</span></h1>
+        <p class="tagline">
+          <strong>Marine engineer</strong> turned
+          <strong>software developer</strong>. I spent years keeping engines
+          running at sea. Now I build the systems, automations, and platforms
+          that keep businesses running on land.
+        </p>
+        <div class="cta-row">
+          <a href="#work" class="btn btn-filled">View my work</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
         </div>
+      </div>
 
-        <div class="hero-body">
-            <div class="eyebrow">Portfolio · 2026</div>
-            <h1>Philip Adams<br><span class="line2">builds what runs.</span></h1>
-            <p class="tagline"><strong>Marine engineer</strong> turned <strong>software developer</strong>. I spent
-                years keeping engines running at sea.
-                Now I build the systems, automations, and platforms that keep businesses running on land.</p>
-            <div class="cta-row">
-                <a href="#work" class="btn btn-filled">View my work</a>
-                <a href="#contact" class="btn btn-outline">Get in touch</a>
-            </div>
-        </div>
-
-        <div class="scroll-indicator">
-            <span>SCROLL</span>
-            <div class="scroll-line"></div>
-        </div>
-
+      <div class="scroll-indicator">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+      </div>
     </div>
 
     <!-- About Section -->
     <section class="about" id="about">
-        <div class="section-eyebrow">About</div>
-        <h2>From engine rooms to <em>codebases.</em></h2>
-        <div class="about-grid">
-            <div class="portrait-card">
-                <div class="portrait-frame">
-                    <img src="/assets/images/my_picture.jpg" alt="Portrait of Philip Adams">
-                </div>
-                <div class="portrait-caption">
-                    <div class="name">Philip Adams</div>
-                    <div class="role">Software Developer</div>
-                </div>
-            </div>
-            <div class="about-copy">
-                <p>I trained as a marine engineer, earning a <strong>BSc in Marine Engineering</strong> from Regional
-                    Maritime University in Ghana, and spent years on ships keeping critical systems running: engine
-                    prep, equipment logging, bunkering operations, the kind of work where a small oversight has real
-                    consequences.</p>
-                <p>That instinct for reliability carried straight into software. I've since led development at a
-                    <strong>custom software design and development company</strong>, built the website and managed the
-                    technical infrastructure for a platform <strong>connecting students and graduates with insurance
-                        organizations</strong> across a global professional network, and now own the build of a
-                    <strong>two-sided job board platform</strong> end to end: dashboards, payments, and automated
-                    workflows on Webflow and Memberstack, backed by custom JavaScript, HTML, and CSS where the platform
-                    needed more than the no-code tools could give it.
-                </p>
-                <p>I'm currently deepening my skills in <strong>data engineering and applied AI</strong>, the next layer
-                    of the same problem: building systems that keep working without anyone having to watch them.</p>
-                <div class="about-categories">
-                    <div class="cat-card reveal">
-                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M4 17l6-6-6-6" />
-                            <path d="M12 19h8" />
-                        </svg>
-                        <h3>Software development</h3>
-                        <p>Building and owning platforms end to end, from architecture to deployment.</p>
-                    </div>
-                    <div class="cat-card reveal">
-                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z" />
-                        </svg>
-                        <h3>Automation</h3>
-                        <p>Workflows and integrations that remove manual, repeatable work.</p>
-                    </div>
-                    <div class="cat-card reveal">
-                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <ellipse cx="12" cy="5" rx="8" ry="3" />
-                            <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5" />
-                            <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
-                        </svg>
-                        <h3>Data &amp; AI</h3>
-                        <p>Growing into data engineering and applied AI as the next layer of the work.</p>
-                    </div>
-                    <div class="cat-card reveal">
-                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M12 2 2 7l10 5 10-5-10-5z" />
-                            <path d="M2 17l10 5 10-5" />
-                            <path d="M2 12l10 5 10-5" />
-                        </svg>
-                        <h3>Systems reliability</h3>
-                        <p>A marine-engineering mindset applied to keeping software systems running.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="section-eyebrow">About</div>
+      <h2>From engine rooms to <em>codebases.</em></h2>
+      <div class="about-grid">
+        <div class="portrait-card">
+          <div class="portrait-frame">
+            <img
+              src="/assets/images/my_picture.jpg"
+              alt="Portrait of Philip Adams"
+            />
+          </div>
+          <div class="portrait-caption">
+            <div class="name">Philip Adams</div>
+            <div class="role">Software Developer</div>
+          </div>
         </div>
+        <div class="about-copy">
+          <p>
+            I trained as a marine engineer, earning a
+            <strong>BSc in Marine Engineering</strong> from Regional Maritime
+            University in Ghana, and spent years on ships keeping critical
+            systems running: engine prep, equipment logging, bunkering
+            operations, the kind of work where a small oversight has real
+            consequences.
+          </p>
+          <p>
+            That instinct for reliability carried straight into software. I've
+            since led development at a
+            <strong>custom software design and development company</strong>,
+            built the website and managed the technical infrastructure for a
+            platform
+            <strong
+              >connecting students and graduates with insurance
+              organizations</strong
+            >
+            across a global professional network, and now own the build of a
+            <strong>two-sided job board platform</strong> end to end:
+            dashboards, payments, and automated workflows on Webflow and
+            Memberstack, backed by custom JavaScript, HTML, and CSS where the
+            platform needed more than the no-code tools could give it.
+          </p>
+          <p>
+            I'm currently deepening my skills in
+            <strong>data engineering and applied AI</strong>, the next layer of
+            the same problem: building systems that keep working without anyone
+            having to watch them.
+          </p>
+          <div class="about-categories">
+            <div class="cat-card reveal">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 17l6-6-6-6" />
+                <path d="M12 19h8" />
+              </svg>
+              <h3>Software development</h3>
+              <p>
+                Building and owning platforms end to end, from architecture to
+                deployment.
+              </p>
+            </div>
+            <div class="cat-card reveal">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z" />
+              </svg>
+              <h3>Automation</h3>
+              <p>
+                Workflows and integrations that remove manual, repeatable work.
+              </p>
+            </div>
+            <div class="cat-card reveal">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <ellipse cx="12" cy="5" rx="8" ry="3" />
+                <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5" />
+                <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+              </svg>
+              <h3>Data &amp; AI</h3>
+              <p>
+                Growing into data engineering and applied AI as the next layer
+                of the work.
+              </p>
+            </div>
+            <div class="cat-card reveal">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2 2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+              <h3>Systems reliability</h3>
+              <p>
+                A marine-engineering mindset applied to keeping software systems
+                running.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Work Section -->
     <section class="work" id="work">
-        <div class="section-eyebrow">Work</div>
-        <h2>Platforms I've built, run, and <em>kept alive.</em></h2>
+      <div class="section-eyebrow">Work</div>
+      <h2>Platforms I've built, run, and <em>kept alive.</em></h2>
 
-        <a href="https://jobs.corporatesandprofessionals.com/" target="_blank" class="work-featured">
-            <h3>Corporates &amp; Professionals</h3>
-            <div class="work-role">Software Developer · Contract</div>
-            <p>A two-sided job board for employers and job seekers, featuring authentication, custom dashboards, paid
-                job posting, applications, resume uploads, and automated weekly job-digest emails.</p>
-            <div class="work-tags">
-                <span>Webflow</span><span>Memberstack</span><span>Stripe</span><span>Make.com</span><span>Custom
-                    JS</span><span>HTML/CSS</span>
-            </div>
-            <span class="work-link">View live <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 17 17 7" />
-                    <path d="M7 7h10v10" />
-                </svg></span>
+      <a
+        href="https://jobs.corporatesandprofessionals.com/"
+        target="_blank"
+        class="work-featured"
+      >
+        <h3>Corporates &amp; Professionals</h3>
+        <div class="work-role">Software Developer · Contract</div>
+        <p>
+          A two-sided job board for employers and job seekers, featuring
+          authentication, custom dashboards, paid job posting, applications,
+          resume uploads, and automated weekly job-digest emails.
+        </p>
+        <div class="work-tags">
+          <span>Webflow</span><span>Memberstack</span><span>Stripe</span
+          ><span>Make.com</span><span>Custom JS</span><span>HTML/CSS</span>
+        </div>
+        <span class="work-link"
+          >View live
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M7 17 17 7" />
+            <path d="M7 7h10v10" /></svg
+        ></span>
+      </a>
+
+      <div class="work-secondary">
+        <a
+          href="https://www.theinsurancecommunity.com/"
+          target="_blank"
+          class="work-card reveal"
+        >
+          <div class="work-index">Via Doxabeta</div>
+          <h3>The Insurance Community Website</h3>
+          <div class="work-role">Developer</div>
+          <p>
+            A public-facing website for a global insurance community connecting
+            students and graduates with insurance firms and professionals,
+            supporting recruitment, networking, and access to industry
+            opportunities. Built the website and CMS-powered blog using Webflow
+            and custom front-end development.
+          </p>
+          <div class="work-tags">
+            <span>Webflow</span><span>Custom JS</span><span>HTML/CSS</span
+            ><span>CMS</span>
+          </div>
+          <span class="work-link"
+            >View live
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M7 17 17 7" />
+              <path d="M7 7h10v10" /></svg
+          ></span>
         </a>
 
-        <div class="work-secondary">
+        <a
+          href="https://platform.theinsurancecommunity.com/"
+          target="_blank"
+          class="work-card reveal"
+        >
+          <div class="work-index">The Insurance Community</div>
+          <h3>The Insurance Community Platform</h3>
+          <div class="work-role">Web &amp; Technical Operations Engineer</div>
+          <p>
+            Managed the technical operations of a global membership platform
+            serving 400+ users, including mobile app deployment, website
+            operations, Google Workspace administration, and analytics.
+          </p>
+          <div class="work-tags">
+            <span>iOS/Android</span><span>Google Workspace</span
+            ><span>Google Analytics</span><span>Vendor Coordination</span>
+          </div>
+          <span class="work-link"
+            >Visit platform
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M7 17 17 7" />
+              <path d="M7 7h10v10" /></svg
+          ></span>
+        </a>
 
-            <a href="https://www.theinsurancecommunity.com/" target="_blank" class="work-card reveal">
-                <div class="work-index">Via Doxabeta</div>
-                <h3>The Insurance Community Website</h3>
-                <div class="work-role">Developer</div>
-                <p>A public-facing website for a global insurance community connecting students and graduates with
-                    insurance firms and professionals, supporting recruitment, networking, and access to industry
-                    opportunities. Built the website and CMS-powered blog using Webflow and custom front-end
-                    development.</p>
-                <div class="work-tags">
-                    <span>Webflow</span><span>Custom JS</span><span>HTML/CSS</span><span>CMS</span>
-                </div>
-                <span class="work-link">View live <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 17 17 7" />
-                        <path d="M7 7h10v10" />
-                    </svg></span>
-            </a>
+        <a
+          href="https://www.zoay.co.uk/"
+          target="_blank"
+          class="work-card reveal"
+        >
+          <div class="work-index">Independent Project</div>
+          <h3>Zoay</h3>
+          <div class="work-role">Developer, Freelance</div>
+          <p>
+            Website and CMS-powered blog for a boutique consulting firm, with
+            custom front-end development, domain configuration, and Mailchimp
+            newsletter integration.
+          </p>
+          <div class="work-tags">
+            <span>Webflow</span><span>CMS</span><span>Custom JS</span
+            ><span>HTML/CSS</span><span>Mailchimp</span>
+          </div>
+          <span class="work-link"
+            >View live
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M7 17 17 7" />
+              <path d="M7 7h10v10" /></svg
+          ></span>
+        </a>
 
-            <a href="https://platform.theinsurancecommunity.com/" target="_blank" class="work-card reveal">
-                <div class="work-index">The Insurance Community</div>
-                <h3>The Insurance Community Platform</h3>
-                <div class="work-role">Web &amp; Technical Operations Engineer</div>
-                <p>Managed the technical operations of a global membership platform serving 400+ users, including mobile
-                    app deployment, website operations, Google Workspace administration, and analytics.</p>
-                <div class="work-tags">
-                    <span>iOS/Android</span><span>Google Workspace</span><span>Google Analytics</span><span>Vendor
-                        Coordination</span>
-                </div>
-                <span class="work-link">Visit platform <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 17 17 7" />
-                        <path d="M7 7h10v10" />
-                    </svg></span>
-            </a>
+        <a href="https://www.few.tv/" target="_blank" class="work-card reveal">
+          <div class="work-index">Via Doxabeta</div>
+          <h3>Future Entertainment Works Co.</h3>
+          <div class="work-role">Developer</div>
+          <p>
+            Dual-region websites for an established audio visual & automation
+            systems integration company operating across Saudi Arabia and the
+            wider region, covering front-end build and content architecture for
+            the company's UK and Saudi Arabia websites.
+          </p>
+          <div class="work-tags">
+            <span>Webflow</span><span>Custom JS</span><span>HTML/CSS</span>
+          </div>
+          <span class="work-link"
+            >View SA site
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M7 17 17 7" />
+              <path d="M7 7h10v10" /></svg
+          ></span>
+          <span class="work-status">UK site currently offline</span>
+        </a>
 
-            <a href="https://www.zoay.co.uk/" target="_blank" class="work-card reveal">
-                <div class="work-index">Independent Project</div>
-                <h3>Zoay</h3>
-                <div class="work-role">Developer, Freelance</div>
-                <p>Website and CMS-powered blog for a boutique consulting firm, with custom front-end development,
-                    domain configuration, and Mailchimp newsletter integration.</p>
-                <div class="work-tags">
-                    <span>Webflow</span><span>CMS</span><span>Custom
-                        JS</span><span>HTML/CSS</span><span>Mailchimp</span>
-                </div>
-                <span class="work-link">View live <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 17 17 7" />
-                        <path d="M7 7h10v10" />
-                    </svg></span>
-            </a>
+        <a
+          href="https://www.doxabeta.com/"
+          target="_blank"
+          class="work-card reveal"
+        >
+          <div class="work-index">Via Doxabeta</div>
+          <h3>Doxabeta Website Rebuild</h3>
+          <div class="work-role">Lead Developer</div>
+          <p>
+            Complete website rebuild for Doxabeta, a product development and
+            software engineering company focused on research, innovation, and
+            technology services. Rebuilt the company's website with a responsive
+            Webflow experience, custom front-end development, and interactive
+            animations.
+          </p>
+          <div class="work-tags">
+            <span>Webflow</span><span>Custom JS</span><span>HTML/CSS</span>
+          </div>
+          <span class="work-link"
+            >View live
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M7 17 17 7" />
+              <path d="M7 7h10v10" /></svg
+          ></span>
+        </a>
 
-            <a href="https://www.few.tv/" target="_blank" class="work-card reveal">
-                <div class="work-index">Via Doxabeta</div>
-                <h3>Future Entertainment Works Co.</h3>
-                <div class="work-role">Developer</div>
-                <p>Dual-region websites for an established audio visual & automation systems integration
-                    company operating across Saudi Arabia and the wider region, covering front-end build and content
-                    architecture for the company's UK and Saudi Arabia websites.</p>
-                <div class="work-tags">
-                    <span>Webflow</span><span>Custom JS</span><span>HTML/CSS</span>
-                </div>
-                <span class="work-link">View SA site <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 17 17 7" />
-                        <path d="M7 7h10v10" />
-                    </svg></span>
-                <span class="work-status">UK site currently offline</span>
-            </a>
+        <a
+          href="https://www.chopboxonline.com/"
+          target="_blank"
+          class="work-card reveal"
+        >
+          <div class="work-index">Early Career</div>
+          <h3>Chopbox Online</h3>
+          <div class="work-role">Web Developer</div>
+          <p>
+            WordPress-based e-commerce platform for a student services startup,
+            supporting a catalog of 1,500+ book titles and day-to-day product
+            management.
+          </p>
+          <div class="work-tags">
+            <span>WordPress</span><span>E-commerce</span
+            ><span>Catalog Management</span>
+          </div>
+          <span class="work-link"
+            >Visit website
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M7 17 17 7" />
+              <path d="M7 7h10v10" /></svg
+          ></span>
+        </a>
 
-            <a href="https://www.doxabeta.com/" target="_blank" class="work-card reveal">
-                <div class="work-index">Via Doxabeta</div>
-                <h3>Doxabeta Website Rebuild</h3>
-                <div class="work-role">Lead Developer</div>
-                <p>Complete website rebuild for Doxabeta, a product development and software engineering company focused
-                    on research, innovation, and technology services. Rebuilt the company's website with a responsive
-                    Webflow experience, custom front-end development, and interactive animations.</p>
-                <div class="work-tags">
-                    <span>Webflow</span><span>Custom JS</span><span>HTML/CSS</span>
-                </div>
-                <span class="work-link">View live <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 17 17 7" />
-                        <path d="M7 7h10v10" />
-                    </svg></span>
-            </a>
+        <div class="work-card reveal">
+          <div class="work-index">Personal Project</div>
+          <h3>TrailGear Toolkit</h3>
+          <div class="work-role">Developer, Solo Build</div>
+          <p>
+            A custom WooCommerce plugin for a fictional outdoor-gear store,
+            built from scratch in PHP. It includes a custom Rentable Gear
+            product type, a checkout delivery-date field, a bulk-discount cart
+            rule, an API-key protected REST endpoint, an admin settings page,
+            and a daily low-stock email digest. Deployed on a hand-configured
+            LAMP server with CI running on every push.
+          </p>
 
-
-            <a href="https://www.chopboxonline.com/" target="_blank" class="work-card reveal">
-                <div class="work-index">Early Career</div>
-                <h3>Chopbox Online</h3>
-                <div class="work-role">Web Developer</div>
-                <p>WordPress-based e-commerce platform for a student services startup, supporting a catalog of 1,500+
-                    book titles and day-to-day product management.</p>
-                <div class="work-tags">
-                    <span>WordPress</span><span>E-commerce</span><span>Catalog Management</span>
-                </div>
-                <span class="work-link">Visit website <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 17 17 7" />
-                        <path d="M7 7h10v10" />
-                    </svg></span>
-
-            </a>
-
-
-            <div class="work-card reveal">
-                <div class="work-index">Personal Project</div>
-                <h3>TrailGear Toolkit</h3>
-                <div class="work-role">Developer, Solo Build</div>
-                <p>A custom WooCommerce plugin for a fictional outdoor-gear store, built from scratch in PHP. It
-                    includes a
-                    custom Rentable Gear product type, a checkout delivery-date field, a bulk-discount cart rule, an
-                    API-key
-                    protected REST endpoint, an admin settings page, and a daily low-stock email digest. Deployed on a
-                    hand-configured LAMP server with CI running on every push.</p>
-
-                <div class="work-tags">
-                    <span>PHP</span><span>WooCommerce</span><span>WordPress</span><span>REST
-                        API</span><span>WP-Cron</span><span>GitHub Actions</span><span>Google Cloud</span>
-                </div>
-                <div class="work-links">
-                    <a href="https://trailgear.duckdns.org/" target="_blank" class="work-link">View live demo <svg
-                            viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M7 17 17 7" />
-                            <path d="M7 7h10v10" />
-                        </svg></a>
-                    <a href="https://github.com/Philipad1234/trailgear-toolkit" target="_blank" class="work-link">View
-                        code <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M7 17 17 7" />
-                            <path d="M7 7h10v10" />
-                        </svg></a>
-                </div>
-            </div>
-
-            <div class="work-card reveal">
-                <div class="work-index">Personal Project</div>
-                <h3>AI Agents (n8n)</h3>
-                <div class="work-role">Developer, Solo Build</div>
-                <p>Three n8n AI workflows: a RAG chat agent (Claude with Pinecone retrieval and a calculator tool) that
-                    answers questions about Tesla's quarterly reports and cites its sources, an ingestion pipeline that
-                    loads new PDFs from Google Drive into the vector store automatically, and a locally run sentiment
-                    classifier. Answers were checked against the source reports.</p>
-                <div class="work-tags">
-                    <span>n8n</span><span>RAG</span><span>Claude</span><span>Pinecone</span><span>Ollama</span>
-                </div>
-                <div class="work-links">
-                    <a href="https://github.com/Philipad1234/n8n-ai-agents" target="_blank" rel="noopener"
-                        class="work-link">View
-                        code <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M7 17 17 7" />
-                            <path d="M7 7h10v10" />
-                        </svg></a>
-                </div>
-            </div>
-
+          <div class="work-tags">
+            <span>PHP</span><span>WooCommerce</span><span>WordPress</span
+            ><span>REST API</span><span>WP-Cron</span><span>GitHub Actions</span
+            ><span>Google Cloud</span>
+          </div>
+          <div class="work-links">
+            <a
+              href="https://trailgear.duckdns.org/"
+              target="_blank"
+              class="work-link"
+              >View live demo
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" /></svg
+            ></a>
+            <a
+              href="https://github.com/Philipad1234/trailgear-toolkit"
+              target="_blank"
+              class="work-link"
+              >View code
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" /></svg
+            ></a>
+          </div>
         </div>
+
+        <div class="work-card reveal">
+          <div class="work-index">Personal Project</div>
+          <h3>AI Agents (n8n)</h3>
+          <div class="work-role">Developer, Solo Build</div>
+          <p>
+            Three n8n AI workflows: a RAG chat agent (Claude with Pinecone
+            retrieval and a calculator tool) that answers questions about
+            Tesla's quarterly reports and cites its sources, an ingestion
+            pipeline that loads new PDFs from Google Drive into the vector store
+            automatically, and a locally run sentiment classifier. Answers were
+            checked against the source reports.
+          </p>
+          <div class="work-tags">
+            <span>n8n</span><span>RAG</span><span>Claude</span
+            ><span>Pinecone</span><span>Ollama</span>
+          </div>
+          <div class="work-links">
+            <a
+              href="https://github.com/Philipad1234/n8n-ai-agents"
+              target="_blank"
+              rel="noopener"
+              class="work-link"
+              >View code
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Journey Section -->
     <section class="journey" id="journey">
-        <div class="section-eyebrow">Journey</div>
-        <h2>Two careers, <em>one instinct.</em></h2>
+      <div class="section-eyebrow">Journey</div>
+      <h2>Two careers, <em>one instinct.</em></h2>
 
-        <div class="timeline">
-            <div class="timeline-item is-origin">
-                <div class="timeline-marker"><span class="timeline-year">2018 &ndash; 2021</span></div>
-                <div class="timeline-card">
-                    <h3>Engine Officer Cadet</h3>
-                    <div class="timeline-company">Bernard Schulte Shipmanagement · At Sea</div>
-                    <p>Trained and worked as a marine engineer aboard commercial vessels: engine prep, equipment
-                        logging, bunkering operations. Earned a BSc in Marine Engineering from Regional Maritime
-                        University, Ghana, alongside the role. The kind of work where a missed detail has real, physical
-                        consequences, and where systems have to keep running no matter what.</p>
-                </div>
+      <div class="timeline">
+        <div class="timeline-item is-origin">
+          <div class="timeline-marker">
+            <span class="timeline-year">2018 &ndash; 2021</span>
+          </div>
+          <div class="timeline-card">
+            <h3>Engine Officer Cadet</h3>
+            <div class="timeline-company">
+              Bernard Schulte Shipmanagement · At Sea
             </div>
-
-            <div class="timeline-item is-origin">
-                <div class="timeline-marker"><span class="timeline-year">2021 &ndash; 2022</span></div>
-                <div class="timeline-card">
-                    <h3>Teaching Myself to Build</h3>
-                    <div class="timeline-company">Self-Directed · Full-Stack Bootcamp</div>
-                    <p>Left ship life to retrain in software, working through a full-stack web development bootcamp and
-                        building out the fundamentals: JavaScript, HTML/CSS, and the beginnings of a new career built on
-                        the same instinct for reliable systems.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"><span class="timeline-year">2022</span></div>
-                <div class="timeline-card">
-                    <h3>Web Developer</h3>
-                    <div class="timeline-company">Chopbox Online · Accra, Ghana</div>
-                    <p>First role in software: maintaining a WordPress e-commerce platform and a catalog of 1,500+ book
-                        titles. Junior work, but the first proof that the transition was real.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"><span class="timeline-year">2022 &ndash; 2025</span></div>
-                <div class="timeline-card">
-                    <h3>Lead Developer</h3>
-                    <div class="timeline-company">Doxabeta Software Solutions · Remote, London</div>
-                    <p>Promoted to lead developer after the previous lead's departure, taking on full technical
-                        ownership of the company's operations. Independently delivered and maintained 4 client projects,
-                        including Future Entertainment Works' UK and Saudi Arabia websites, The Insurance Community's
-                        website, and the company's own website rebuild, while mentoring 15+ students from partner
-                        colleges.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"><span class="timeline-year">2024 &ndash; 2025</span></div>
-                <div class="timeline-card">
-                    <h3>Web &amp; Technical Operations Engineer</h3>
-                    <div class="timeline-company">The Insurance Community · Remote, London</div>
-                    <p>What started as a Doxabeta client project (building TIC's website) turned into a direct hire.
-                        Became the lead technical point of contact for a global membership platform serving 400+ users,
-                        running infrastructure, analytics, and the native app deployment.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"><span class="timeline-year">2026 &ndash; Present</span></div>
-                <div class="timeline-card">
-                    <h3>Software Developer</h3>
-                    <div class="timeline-company">Corporates &amp; Professionals · Contract, Remote</div>
-                    <p>Sole engineer on a two-sided job board platform, owned end to end: dashboards, payments,
-                        automation, and the infrastructure underneath. The current chapter, and the clearest expression
-                        yet of what full ownership of a platform looks like.</p>
-                </div>
-            </div>
-
+            <p>
+              Trained and worked as a marine engineer aboard commercial vessels:
+              engine prep, equipment logging, bunkering operations. Earned a BSc
+              in Marine Engineering from Regional Maritime University, Ghana,
+              alongside the role. The kind of work where a missed detail has
+              real, physical consequences, and where systems have to keep
+              running no matter what.
+            </p>
+          </div>
         </div>
+
+        <div class="timeline-item is-origin">
+          <div class="timeline-marker">
+            <span class="timeline-year">2021 &ndash; 2022</span>
+          </div>
+          <div class="timeline-card">
+            <h3>Teaching Myself to Build</h3>
+            <div class="timeline-company">
+              Self-Directed · Full-Stack Bootcamp
+            </div>
+            <p>
+              Left ship life to retrain in software, working through a
+              full-stack web development bootcamp and building out the
+              fundamentals: JavaScript, HTML/CSS, and the beginnings of a new
+              career built on the same instinct for reliable systems.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-year">2022</span>
+          </div>
+          <div class="timeline-card">
+            <h3>Web Developer</h3>
+            <div class="timeline-company">Chopbox Online · Accra, Ghana</div>
+            <p>
+              First role in software: maintaining a WordPress e-commerce
+              platform and a catalog of 1,500+ book titles. Junior work, but the
+              first proof that the transition was real.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-year">2022 &ndash; 2025</span>
+          </div>
+          <div class="timeline-card">
+            <h3>Lead Developer</h3>
+            <div class="timeline-company">
+              Doxabeta Software Solutions · Remote, London
+            </div>
+            <p>
+              Promoted to lead developer after the previous lead's departure,
+              taking on full technical ownership of the company's operations.
+              Independently delivered and maintained 4 client projects,
+              including Future Entertainment Works' UK and Saudi Arabia
+              websites, The Insurance Community's website, and the company's own
+              website rebuild, while mentoring 15+ students from partner
+              colleges.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-year">2024 &ndash; 2025</span>
+          </div>
+          <div class="timeline-card">
+            <h3>Web &amp; Technical Operations Engineer</h3>
+            <div class="timeline-company">
+              The Insurance Community · Remote, London
+            </div>
+            <p>
+              What started as a Doxabeta client project (building TIC's website)
+              turned into a direct hire. Became the lead technical point of
+              contact for a global membership platform serving 400+ users,
+              running infrastructure, analytics, and the native app deployment.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-year">2026 &ndash; Present</span>
+          </div>
+          <div class="timeline-card">
+            <h3>Software Developer</h3>
+            <div class="timeline-company">
+              Corporates &amp; Professionals · Contract, Remote
+            </div>
+            <p>
+              Sole engineer on a two-sided job board platform, owned end to end:
+              dashboards, payments, automation, and the infrastructure
+              underneath. The current chapter, and the clearest expression yet
+              of what full ownership of a platform looks like.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Expertise Section -->
     <section class="expertise" id="expertise">
-        <div class="section-eyebrow">Expertise</div>
-        <h2>The stack behind <em>the work.</em></h2>
+      <div class="section-eyebrow">Expertise</div>
+      <h2>The stack behind <em>the work.</em></h2>
 
-        <div class="expertise-grid">
-
-            <div class="expertise-group">
-                <h3>Languages</h3>
-                <div class="expertise-tags">
-                    <span>JavaScript</span><span>PHP</span><span>Python</span><span>HTML/CSS</span>
-                </div>
-            </div>
-
-            <div class="expertise-group">
-                <h3>Frameworks &amp; Libraries</h3>
-                <div class="expertise-tags">
-                    <span>React</span><span>Node.js</span><span>Express.js</span><span>Bootstrap</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>scikit-learn</span>
-                </div>
-            </div>
-
-            <div class="expertise-group">
-                <h3>Databases &amp; APIs</h3>
-                <div class="expertise-tags">
-                    <span>MongoDB</span><span>PostgreSQL</span><span>Airtable</span><span>REST
-                        APIs</span><span>Postman</span><span>Pinecone</span>
-                </div>
-            </div>
-
-            <div class="expertise-group">
-                <h3>Platforms &amp; Development Tools</h3>
-                <div class="expertise-tags">
-                    <span>Webflow</span><span>WordPress</span><span>WooCommerce</span><span>Memberstack</span><span>Make.com</span><span>HubSpot</span><span>Stripe</span><span>Git/GitHub</span><span>GitHub
-                        Actions</span><span>Cloudinary</span>
-                </div>
-            </div>
-
-            <div class="expertise-group">
-                <h3>Cloud &amp; Infrastructure</h3>
-                <div class="expertise-tags">
-                    <span>Google Cloud</span><span>Google Workspace</span><span>GoDaddy</span>
-                </div>
-            </div>
-
-            <div class="expertise-group">
-                <h3>AI &amp; Automation</h3>
-                <div class="expertise-tags">
-                    <span>LLM/Agent
-                        Automation</span><span>n8n</span><span>RAG</span><span>Claude</span><span>OpenAI</span><span>ChatGPT</span>
-                </div>
-            </div>
-
-            <div class="expertise-group">
-                <h3>Data Science &amp; ML</h3>
-                <div class="expertise-tags">
-                    <span>Supervised Learning</span><span>Conda</span><span>Jupyter Notebook</span>
-                </div>
-            </div>
-
-            <div class="expertise-group">
-                <h3>Design-to-Build</h3>
-                <div class="expertise-tags">
-                    <span>Figma</span>
-                </div>
-            </div>
-
+      <div class="expertise-grid">
+        <div class="expertise-group">
+          <h3>Languages</h3>
+          <div class="expertise-tags">
+            <span>JavaScript</span><span>PHP</span><span>Python</span
+            ><span>HTML/CSS</span>
+          </div>
         </div>
+
+        <div class="expertise-group">
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="expertise-tags">
+            <span>React</span><span>Node.js</span><span>Express.js</span
+            ><span>Bootstrap</span><span>NumPy</span><span>Pandas</span
+            ><span>Matplotlib</span><span>scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="expertise-group">
+          <h3>Databases &amp; APIs</h3>
+          <div class="expertise-tags">
+            <span>MongoDB</span><span>PostgreSQL</span><span>Airtable</span
+            ><span>REST APIs</span><span>Postman</span><span>Pinecone</span>
+          </div>
+        </div>
+
+        <div class="expertise-group">
+          <h3>Platforms &amp; Development Tools</h3>
+          <div class="expertise-tags">
+            <span>Webflow</span><span>WordPress</span><span>WooCommerce</span
+            ><span>Memberstack</span><span>Make.com</span><span>HubSpot</span
+            ><span>Stripe</span><span>Git/GitHub</span
+            ><span>GitHub Actions</span><span>Cloudinary</span>
+          </div>
+        </div>
+
+        <div class="expertise-group">
+          <h3>Cloud &amp; Infrastructure</h3>
+          <div class="expertise-tags">
+            <span>Google Cloud</span><span>Google Workspace</span
+            ><span>GoDaddy</span>
+          </div>
+        </div>
+
+        <div class="expertise-group">
+          <h3>AI &amp; Automation</h3>
+          <div class="expertise-tags">
+            <span>LLM/Agent Automation</span><span>n8n</span><span>RAG</span
+            ><span>Claude</span><span>OpenAI</span><span>ChatGPT</span>
+          </div>
+        </div>
+
+        <div class="expertise-group">
+          <h3>Data Science &amp; ML</h3>
+          <div class="expertise-tags">
+            <span>Supervised Learning</span><span>Conda</span
+            ><span>Jupyter Notebook</span>
+          </div>
+        </div>
+
+        <div class="expertise-group">
+          <h3>Design-to-Build</h3>
+          <div class="expertise-tags">
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <div class="section-eyebrow">Contact</div>
-        <h2>Let's build something <em>reliable.</em></h2>
-        <p>Open to full-time roles, contract and freelance work, and partnerships across software development,
-            automation, data engineering, and AI. If you need a platform built and kept running, a second opinion on
-            your stack, or just want to talk, I'd like to hear about it.</p>
-        <div class="contact-audience">
-            <span>Employers</span><span>Recruiters</span><span>Contractors</span><span>Partners</span><span>Advisory</span>
+      <div class="section-eyebrow">Contact</div>
+      <h2>Let's build something <em>reliable.</em></h2>
+      <p>
+        Open to full-time roles, contract and freelance work, and partnerships
+        across software development, automation, data engineering, and AI. If
+        you need a platform built and kept running, a second opinion on your
+        stack, or just want to talk, I'd like to hear about it.
+      </p>
+      <div class="contact-audience">
+        <span>Employers</span><span>Recruiters</span><span>Contractors</span
+        ><span>Partners</span><span>Advisory</span>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-field" id="fieldName">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" />
+            <span class="field-error">Name is required</span>
+          </div>
+          <div class="form-field" id="fieldEmail">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" />
+            <span class="field-error">Email is required</span>
+          </div>
         </div>
-
-        <form class="contact-form" id="contactForm" novalidate>
-            <div class="form-row">
-                <div class="form-field" id="fieldName">
-                    <label for="cf-name">Name</label>
-                    <input type="text" id="cf-name" name="name">
-                    <span class="field-error">Name is required</span>
-                </div>
-                <div class="form-field" id="fieldEmail">
-                    <label for="cf-email">Email</label>
-                    <input type="email" id="cf-email" name="email">
-                    <span class="field-error">Email is required</span>
-                </div>
-            </div>
-            <div class="form-field">
-                <label for="cf-reason">Reason for reaching out</label>
-                <select id="cf-reason" name="reason">
-                    <option value="Full-time role">Full-time role</option>
-                    <option value="Contract / freelance work">Contract / freelance work</option>
-                    <option value="Advisory / consultation">Advisory / consultation</option>
-                    <option value="Partnership">Partnership</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div class="form-field" id="fieldMessage">
-                <label for="cf-message">Message</label>
-                <textarea id="cf-message" name="message" rows="5"></textarea>
-                <span class="field-error">Message is required</span>
-            </div>
-            <button type="submit" class="form-submit" id="submitBtn">
-                <span class="btn-label">Send message</span>
-                <span class="btn-loading">
-                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                </span>
-                <svg class="checkmark" viewBox="0 0 24 24" fill="none" stroke="#1C1D1F" stroke-width="3"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 6 9 17l-5-5" />
-                </svg>
-            </button>
-            <p class="form-status" id="formStatus"></p>
-            <p class="contact-integration-note">Synced to CRM via <span class="crm-highlight">HubSpot</span> on
-                submission</p>
-        </form>
-
-        <p class="contact-alt">Prefer email? <a href="mailto:philipad2097@gmail.com">philipad2097@gmail.com</a></p>
-
-        <div class="contact-links">
-            <a href="https://linkedin.com/in/philipadams2097" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Philipad1234" target="_blank">GitHub</a>
+        <div class="form-field">
+          <label for="cf-reason">Reason for reaching out</label>
+          <select id="cf-reason" name="reason">
+            <option value="Full-time role">Full-time role</option>
+            <option value="Contract / freelance work">
+              Contract / freelance work
+            </option>
+            <option value="Advisory / consultation">
+              Advisory / consultation
+            </option>
+            <option value="Partnership">Partnership</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
+        <div class="form-field" id="fieldMessage">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5"></textarea>
+          <span class="field-error">Message is required</span>
+        </div>
+        <button type="submit" class="form-submit" id="submitBtn">
+          <span class="btn-label">Send message</span>
+          <span class="btn-loading">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+          </span>
+          <svg
+            class="checkmark"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1C1D1F"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M20 6 9 17l-5-5" />
+          </svg>
+        </button>
+        <p class="form-status" id="formStatus"></p>
+        <p class="contact-integration-note">
+          Synced to CRM via <span class="crm-highlight">HubSpot</span> on
+          submission
+        </p>
+      </form>
+
+      <p class="contact-alt">
+        Prefer email?
+        <a href="mailto:philipad2097@gmail.com">philipad2097@gmail.com</a>
+      </p>
+
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/philipadams2097" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/Philipad1234" target="_blank">GitHub</a>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <div class="logo-mark">
-            <div class="logo-ring"><span>PA</span></div>
-            <span class="logo-name">PHILIP ADAMS</span>
-        </div>
-        <div class="footer-meta">
-            <span>&copy; 2026 Philip Adams</span>
-            <span class="footer-stack">Built with HTML, CSS, JavaScript, Node.js, Express &amp; MongoDB</span>
-        </div>
+      <div class="logo-mark">
+        <div class="logo-ring"><span>PA</span></div>
+        <span class="logo-name">PHILIP ADAMS</span>
+      </div>
+      <div class="footer-meta">
+        <span>&copy; 2026 Philip Adams</span>
+        <span class="footer-stack"
+          >Built with HTML, CSS, JavaScript, Node.js, Express &amp;
+          MongoDB</span
+        >
+      </div>
     </footer>
 
     <script src="/assets/js/index.js"></script>
-</body>
-
+    <script src="/assets/js/utm.js"></script>
+  </body>
 </html>
